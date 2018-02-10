@@ -26,8 +26,7 @@ gulp.task('html', function() {
 //*** SASS *** Compila, concatena, inserta prefixer, comprime y coloca en carpeta
 gulp.task('sass', function(){
 	return gulp.src([
-				ORI + '/assets/sass/application.scss',
-				ORI + '/assets/sass/**/*.*'
+				ORI + '/assets/sass/main.scss'
 				])
 		.pipe(sass().on('error', sass.logError)) //Compila SASS en el orden colocado
 		.pipe(concat('style.min.css')) //Concatena los archivos css generados
